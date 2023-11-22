@@ -1,0 +1,302 @@
+	/* ============ desktop view ============ */
+	@media all and (min-width: 992px) {
+    /* Reset default margin and padding on relevant elements */
+body, h1, h2, h3, p, ul, li {
+    margin: 0;
+    padding: 0;
+    font-family: 'Glacial Indifference', sans-serif;
+}
+
+/* Apply these styles to the header and navbar to make them full-width 
+.header, .navbar {
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.7);
+}*/
+
+.container {
+    max-width: 1200px; /* Set a maximum width for the content within the header and navbar */
+    margin: 0 auto; /* Center the content within the container */
+    padding: 0 20px; /* Add some padding to the left and right of the content */
+}
+
+/* Rest of your CSS for header and navbar */
+/* ... */
+
+.header {
+    height: 100px;
+    background-image: url('header.png');
+    background-size: cover;
+    background-position: top left;
+    background-repeat: no-repeat;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 20px;
+    margin: 0 0 30px 0;
+}
+
+.logo img {
+    max-height: 100%;
+    margin-left: 50px;
+}
+	
+		.dropdown-menu li {
+			position: relative;
+			padding: 10px;
+		}
+		.dropdown-menu{
+			padding: 20px;
+		}
+		.navbar {
+      width: 100%;
+  		background-color: #7ed957;
+		}
+
+		.navbar .nav-link {
+  			color: white;
+		}
+		.navbar .nav-item.dropdown:last-child a.nav-link::after {
+			display: none; 
+		}
+
+		.dropdown-menu .submenu { 
+			display: none;
+			position: absolute;
+			left: 100%;
+			top: -7px;
+			padding: 20px;
+			border-radius: 10px;
+			box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.2); /* Add shadow */
+			background: #fff; /* Background color for submenu */
+		}
+		.dropdown-menu .submenu-left { 
+			right: 100%;
+			left: auto;
+		}
+		.dropdown-menu li:hover {
+ 			background-color: #7ed957;
+		}
+		.dropdown-item:hover {
+  			background-color: transparent;
+			color: #fff;
+		}
+
+		
+		.dropdown-menu > li:hover > .submenu {
+			display: block;
+			list-style: none; /* Remove bullets */
+		}
+    .carousel {
+      position: relative;
+      width: 75%; /* Set width to 75% */
+      height: 300px;
+      overflow: hidden;
+      margin: 0 auto 30px auto; /* Center the carousel */
+      box-shadow: 0 10px 20px rgba(0,0,0,0.19), 0 6px 6px rgba(0,0,0,0.23); /* Add this line */
+    }
+
+    .carousel-images {
+      display: flex;
+      width: 100%; /* Change this to 100% */
+      height: 100%;
+      justify-content: center;
+    }
+
+    .carousel-image {
+      width: 100%; /* Change this to 100% */
+      height: 100%;
+      flex-shrink: 0; /* Add this line */
+      display: none; /* Add this line */
+    }
+
+    .carousel-image.active {
+      display: block; /* Add this line */
+    }
+
+    .carousel-image img {
+      width: 100%;
+      height: 100%;
+    }
+
+    .carousel-button {
+      position: absolute;
+      top: 50%;
+      transform: translateY(-50%);
+      background: rgba(0,0,0,0.5);
+      color: white;
+      border: none;
+      padding: 10px;
+      cursor: pointer;
+      opacity: 0; /* Hide buttons by default */
+      transition: opacity 0.3s ease; /* Smooth transition */
+      width: 40px; /* Add this line */
+      height: 40px; /* Add this line */
+      line-height: 20px; /* Add this line */
+      text-align: center; /* Add this line */
+      font-weight: bold;
+      font-size: 20px;
+    }
+
+    .carousel:hover .carousel-button {
+      opacity: 1; /* Show buttons on hover */
+    }
+
+    .prev {
+      left: 40px;
+      border-radius: 50%;
+    }
+
+    .next {
+      right: 40px;
+      border-radius: 50%;
+    }
+
+    .caption {
+      position: absolute;
+      bottom: 0;
+      background: rgba(126, 217, 87, 0.5);
+      color: white;
+      width: 50%; /* Set width to 50% */
+      padding: 10px;
+      margin-bottom: 10px;
+      text-align: center; /* Align text to the left */;
+      clip-path: polygon(0 0, 100% 0, 85% 100%, 0% 100%); /* Add this line */
+      font-size: 20px;
+    }
+    .projects{
+      margin-bottom: 20px;
+    }
+    .projects-grid {
+      box-shadow: 0 10px 20px rgba(0, 0, 0, 0.19), 0 6px 6px rgba(0, 0, 0, 0.23);
+      margin-top: 30px;
+      margin-bottom: 50px;
+      padding: 10px 60px 50px 60px;
+    }
+    .bg-image1 {
+      background-image: url('Mango.png');
+      background-repeat: no-repeat;
+      background-size: 100% 100%;
+      background-position: center;
+      backdrop-filter: blur(10px);
+      height: 400px;
+    }
+
+    .bg-image2 {
+      background-image: url('nurse\ 3.png');
+      background-repeat: no-repeat;
+      background-size: 100% 100%;
+      background-position: center;
+      backdrop-filter: blur(2px);
+      height: 400px;
+    }
+
+    .bg-image3 {
+      background-image: url('Result\ 1.png');
+      background-repeat: no-repeat;
+      background-size: 100% 100%;
+      background-position: center;
+      backdrop-filter: blur(2px);
+      height: 400px;
+    }
+    .text-outline {
+      text-shadow: -1px 0 #000000, 0 2px #000000, 2px 0 #000000, 0 -1px #000000;
+    }
+    a:active {
+      animation: rubberBand 0.5s;
+    }
+    @keyframes rubberBand {
+      0% {
+        transform: scale(1);
+      }
+
+      30% {
+        transform: scaleX(1.25) scaleY(0.75);
+      }
+
+      40% {
+        transform: scaleX(0.75) scaleY(1.25);
+      }
+
+      50% {
+        transform: scaleX(1.15) scaleY(0.85);
+      }
+
+      65% {
+        transform: scaleX(.95) scaleY(1.05);
+      }
+
+      75% {
+        transform: scaleX(1.05) scaleY(.95);
+      }
+
+      100% {
+        transform: scale(1);
+      }
+    }
+    .hover-text {
+      visibility: hidden;
+    }
+
+    .p-8:hover .hover-text {
+      visibility: visible;
+    }
+    .p-8:hover {
+      background: #fff;
+    }
+    @keyframes flyIn {
+      from {
+        transform: translateY(100%);
+        opacity: 0;
+      }
+      to {
+        transform: translateY(0);
+        opacity: 1;
+      }
+    }
+
+    .card:hover .hover-text {
+      animation: flyIn 1s ease-out forwards;
+    }
+    .grid-container {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 10px;
+      padding: 20px 40px 50px 50px;
+    }
+    
+    .grid-item {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+    .grid-item img {
+      width: 70%;
+      height: 70%;
+      object-fit: contain;
+    }
+    
+	/* ============ desktop view .end// ============ */
+	
+	/* ============ small devices ============ */
+	@media (max-width: 991px) {
+  .header {
+    background-color: #7ed957;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1em;
+  }
+  .logo img {
+    max-width: 100%;
+    height: auto;
+  }
+	
+	.dropdown-menu .dropdown-menu{
+			margin-left: 0.7rem;
+			margin-right: 0.7rem;
+			margin-bottom: 0.5rem;
+	}
+	
+	} }
