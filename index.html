@@ -10,6 +10,7 @@
 <!-- Include the Tailwind CSS CDN -->
 <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
 <link href="https://fonts.googleapis.com/css2?family=Glacial+Indifference:wght@300;400;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
 <link rel="stylesheet" href="acd.css">
 </head>
 
@@ -256,14 +257,22 @@
         </a>
         <div class="mt-4 lg:max-w-sm" style="padding-top: 0px; padding-left: 25px;">
           <p class="text-xl text-white">
-            P.O. Box 1411, <br> Gumani Road Tamale, <br> Northern Region, Ghana 
+            P.O. Box 1411, <br> Gumani Road Tamale, <br> Northern Region, Ghana <br>
           </p>
+          <div class="flex items-center mt-2">
+            <i class="fas fa-envelope text-white text-lg mr-2"></i>
+            <a href="mailto:info@acdep.org" class="text-white">info@acdep.org</a>
+          </div>
+          <div class="flex items-center mt-2">
+            <i class="fas fa-phone fa-flip-horizontal text-white text-lg mr-2"></i>
+            <a href="tel:0372023245" class="text-white">037 202 3245</a>
+          </div>
         </div> 
       </div>
       <div class="grid grid-cols-2 gap-5 row-gap-8 lg:col-span-4 md:grid-cols-4">
-        <div style="border-right: 1px solid white;">
+        <div style="border-right: 1px solid #7ed957;">
           <p class="font-semibold tracking-wide text-white text-xl">Links</p>
-          <ul class="mt-2 space-y-2">
+          <ul class="mt-2 space-y-6">
             <li>
               <a href="#" class="transition-colors duration-300 text-white text-medim hover:text-black">Projects</a>
             </li>
@@ -283,7 +292,7 @@
         </div>
         <div style="border-right: 1px solid white;">
           <p class="font-semibold tracking-wide text-white text-xl">Regions</p>
-          <ul class="mt-2 space-y-2">
+          <ul class="mt-2 space-y-6">
             <li>
               <a href="#" class="transition-colors duration-300 text-white text-medium hover:text-black">Northern Region</a>
             </li>
